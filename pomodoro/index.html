@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>(25:00) Pomodoro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <div id="pomodoro-app">
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+
+            <button data-time="300" class="button time">Just 5</button>
+            <button data-time="1500" class="button time">Pomo 25</button>
+            <button data-time="2700" class="button time">Quick 45</button>
+            <button data-time="3600" class="button time">Lunch 60</button>
+
+            <div class="info">
+                <div class="session">
+                    <h1>Session</h1>
+                    <div class="number-input">
+                        <button class="button minus">-</button>
+                        <input id="session-minutes" min="1" value="25" type="number" class="input-minutes" disabled>min
+                        <button class="button plus">+</button>
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <img class="image-pomodoro" src="pomodoro.png" alt="Pomodoro">
+                    <div class="display-time">25:00</div>
+                    <div class="message"></div>
+                </div>
+
+                <div class="break">
+                    <h1>Break</h1>
+                    <div class="number-input">
+                        <button class="button minus">-</button>
+                        <input id="break-minutes" min="1" value="5" type="number" class="input-minutes" disabled>min
+                        <button class="button plus">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progressbar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="control">
+                <button id="button-play" class="button start"></button>
+                <button id="button-stop" class="button stop"></button>
+            </div>
+
+            <p class="footer">Developed by Matheus Bosa.</p>
+        </div>
+
+        <audio id="alarm-sound">
+            <source src="clock.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

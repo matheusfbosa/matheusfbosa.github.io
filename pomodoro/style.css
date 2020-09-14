@@ -1,0 +1,223 @@
+.container {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #333;
+    border-radius: 20px;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.info {
+    text-align: center;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.info .session {
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.info .break {
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.info .input-minutes {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    border: 0 none;
+    width: 30px;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.timer {
+    text-align: center;
+    margin: 10px auto;
+    border: 5px solid red;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.timer .image-pomodoro {
+    width: 100%;
+}
+
+.timer .display-time {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timer .message {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.button.time {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: #6b8e23;
+    border-radius: 50px;
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button.time:hover {
+    color: #00ff00 !important;
+    letter-spacing: 2px;
+    background: red;
+    transition: all 0.3s ease 0s;
+}
+
+.button.plus {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: #6b8e23;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button.plus:hover {
+    color: #00ff00 !important;
+    background: red;
+    transition: all 0.3s ease 0s;
+}
+
+.button.minus {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button.minus:hover {
+    color: #00ff00 !important;
+    background: #6b8e23;
+    transition: all 0.3s ease 0s;
+}
+
+.control {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.start {
+    background-color: #333;
+    border-color: #333 #333 #333 #6b8e23;
+    border-width: 37px 0 37px 60px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.button.start:hover {
+    transition: all 0.4s ease 0s;
+}
+
+.button.pause {
+    background-color: #333;
+    border-color: #333 #333 #333 red;
+    border-width: 0px 0 0px 50px;
+    border-style: double;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.button.pause:hover {
+    transition: all 0.4s ease 0s;
+}
+
+.button.stop {
+    background-color: #6b8e23;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.button.stop:hover {
+    background: red;
+    font-weight: 700 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.progressbar {
+    background-color: red;
+    border-radius: 13px;
+    margin: auto;
+    margin-top: 90px;
+    width: 500px;
+    padding: 3px;
+}
+
+.progressbar .progress {
+    background-color: #6b8e23;
+    border-radius: 10px;
+    width: 0px;
+    height: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    color: white;
+}
