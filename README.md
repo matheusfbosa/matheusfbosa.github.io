@@ -1,3 +1,3 @@
 # GitHub Pages
 
-Currículo e portfólio.
+My CV and portfolio.
