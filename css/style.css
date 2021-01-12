@@ -394,13 +394,22 @@ footer {
     width: 100%;
 }
 
-footer p {
+footer a {
+    color: whitesmoke;
     font-family: "Press Start 2P", cursive;
     font-size: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
-footer a {
-    color: whitesmoke;
-    text-decoration: underline;
+@media (min-width: 380px) {
+    .footer animation {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer a {
+        font-size: 12px;
+    }
 }
