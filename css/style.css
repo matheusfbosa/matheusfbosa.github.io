@@ -378,7 +378,7 @@ header {
 
 @media (min-width: 880px) {
     .contact .grid {
-        grid-template-columns: repeat(4, 200px);
+        grid-template-columns: repeat(5, 200px);
     }
 }
 
@@ -387,7 +387,7 @@ footer {
     background-color: black;
     bottom: 0;
     display: grid;
-    height: 40px;
+    height: 30px;
     justify-content: center;
     margin-top: 10px;
     position: fixed;
@@ -404,12 +404,12 @@ footer a {
 
 @media (min-width: 380px) {
     .footer animation {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
 @media (min-width: 800px) {
     .footer a {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
