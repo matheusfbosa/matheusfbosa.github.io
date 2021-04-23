@@ -1,3 +1,3 @@
-# Matheus Felipe Bosa
+# Matheus Bosa
 
 My CV and portfolio.
