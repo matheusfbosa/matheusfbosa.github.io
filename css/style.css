@@ -1,415 +1,423 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    animation: gradient 10s ease infinite;
-    background: linear-gradient(-45deg, #431319, #1b181a, #2e250c, #38312e, #3e323d);
-    background-size: 400% 400%;
-    color: whitesmoke;
-    font-family: "Fira Code", monospace;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(
+    -45deg,
+    #431319,
+    #1b181a,
+    #2e250c,
+    #38312e,
+    #3e323d
+  );
+  background-size: 400% 400%;
+  color: whitesmoke;
+  font-family: "Fira Code", monospace;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (min-width: 400px) {
-    body {
-        font-size: 10px;
-    }
+  body {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 600px) {
-    body {
-        font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 1200px) {
-    body {
-        font-size: 14px;
-    }
+  body {
+    font-size: 14px;
+  }
 }
 
 header {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 .menu {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
 }
 
 .menu ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .menu a {
-    color: whitesmoke;
-    display: block;
-    padding: 10px 20px;
-    font-family: "Press Start 2P", cursive;
-    font-size: 8px;
-    text-decoration: none;
-    transition: background-color 1s, color 1s;
+  color: whitesmoke;
+  display: block;
+  padding: 10px 20px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 8px;
+  text-decoration: none;
+  transition: background-color 1s, color 1s;
 }
 
 .menu a:hover,
 .menu a:active {
-    background-color: yellow;
-    color: black;
+  background-color: yellow;
+  color: black;
 }
 
 @media (min-width: 380px) {
-    .menu a {
-        font-size: 10px;
-    }
+  .menu a {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 800px) {
-    .menu a {
-        font-size: 12px;
-    }
+  .menu a {
+    font-size: 12px;
+  }
 }
 
 .presentation {
-    align-content: center;
-    display: grid;
-    gap: 50px;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+  align-content: center;
+  display: grid;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 .presentation .avatar {
-    border: 6px solid white;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
+  border: 6px solid white;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
 }
 
 .presentation .balloon {
-    align-content: center;
-    background-color: black;
-    border-radius: 1em;
-    display: grid;
-    height: 120px;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    transform: scale(1);
-    transition: .3s ease-in-out;
-    width: 250px;
+  align-content: center;
+  background-color: black;
+  border-radius: 1em;
+  display: grid;
+  height: 120px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  width: 250px;
 }
 
 .presentation .balloon:after {
-    border: 3em solid transparent;
-    border-left: 0;
-    border-right-color: black;
-    border-top: 0;
-    content: "";
-    height: 0;
-    left: 0;
-    margin-top: -1.5em;
-    margin-left: -3em;
-    position: absolute;
-    top: 50%;
-    width: 0;
+  border: 3em solid transparent;
+  border-left: 0;
+  border-right-color: black;
+  border-top: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  margin-top: -1.5em;
+  margin-left: -3em;
+  position: absolute;
+  top: 50%;
+  width: 0;
 }
 
 .presentation .balloon:hover,
 .presentation .balloon:active {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .title,
 .subtitle {
-    color: silver;
-    font-family: "Press Start 2P", cursive;
-    line-height: 2em;
+  color: silver;
+  font-family: "Press Start 2P", cursive;
+  line-height: 2em;
 }
 
 .title {
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .text-highlighted {
-    color: yellow;
-    font-family: "Press Start 2P", cursive;
+  color: yellow;
+  font-family: "Press Start 2P", cursive;
 }
 
 .subtitle {
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    border-right: .15em solid yellow;
-    font-size: 10px;
-    font-style: italic;
-    letter-spacing: .15em;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid yellow;
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-    50% {
-        border-color: yellow;
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: yellow;
+  }
 }
 
 @media (min-width: 900px) {
-    .presentation {
-        grid-template-columns: 300px 300px;
-    }
-    .presentation .balloon {
-        height: 150px;
-        margin-top: 10vh;
-        width: 350px;
-    }
-    .subtitle {
-        font-size: 14px;
-    }
+  .presentation {
+    grid-template-columns: 300px 300px;
+  }
+  .presentation .balloon {
+    height: 150px;
+    margin-top: 10vh;
+    width: 350px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
 }
 
 .container {
-    font-size: 18px;
-    line-height: 1.8em;
-    padding: 2em;
+  font-size: 18px;
+  line-height: 1.8em;
+  padding: 2em;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
-    }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
 }
 
 .about {
-    min-height: 40vh;
+  min-height: 40vh;
 }
 
 .about p {
-    margin-top: 5vh;
-    text-align: justify;
-    text-indent: 2em;
+  margin-top: 5vh;
+  text-align: justify;
+  text-indent: 2em;
 }
 
 .education {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 .education .grid {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .experience {
-    min-height: 120vh;
+  min-height: 120vh;
 }
 
 .projects {
-    min-height: 60vh;
+  min-height: 60vh;
 }
 
 .projects .grid {
-    display: grid;
-    gap: 2em;
-    margin-top: 5vh;
+  display: grid;
+  gap: 2em;
+  margin-top: 15vh;
 }
 
 @media (min-width: 560px) {
-    .projects .grid {
-        align-content: center;
-        grid-template-columns: 240px 240px;
-        height: calc(60vh - 8em - 48px);
-        justify-content: center;
-    }
+  .projects .grid {
+    align-content: center;
+    grid-template-columns: 240px 240px;
+    height: calc(60vh - 8em - 48px);
+    justify-content: center;
+  }
 }
 
 @media (min-width: 880px) {
-    .projects .grid {
-        align-content: center;
-        grid-template-columns: repeat(3, 260px);
-        height: calc(60vh - 8em - 48px);
-        justify-content: center;
-    }
+  .projects .grid {
+    align-content: center;
+    grid-template-columns: repeat(4, 260px);
+    height: calc(60vh - 8em - 48px);
+    justify-content: center;
+  }
 }
 
 .flip-card {
-    animation: wiggle 5s infinite;
-    height: 180px;
-    perspective: 1000px;
+  animation: wiggle 3s infinite;
+  height: 180px;
+  perspective: 1000px;
 }
 
 @keyframes wiggle {
-    0% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(0deg);
-    }
-    85% {
-        transform: rotate(5deg);
-    }
-    95% {
-        transform: rotate(-5deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .card {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 2s;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .flip-card:hover .card {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-front,
 .card-back {
-    backface-visibility: hidden;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
 
 .card-back {
-    align-items: center;
-    background-color: black;
-    border: 2px solid whitesmoke;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    height: 180px;
-    transform: rotateY(180deg);
-    width: 100%;
+  align-items: center;
+  background-color: black;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  transform: rotateY(180deg);
+  width: 100%;
 }
 
 .card-back a {
-    color: whitesmoke;
-    text-decoration: none;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .img-project {
-    border: 2px solid whitesmoke;
-    border-radius: 10px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
 }
 
 .contact {
-    margin-bottom: 4vh;
-    min-height: 40vh;
+  margin-bottom: 4vh;
+  margin-top: 5vh;
+  min-height: 40vh;
 }
 
 .contact .grid {
-    align-content: center;
-    display: grid;
-    gap: 2em;
-    justify-content: center;
-    margin-top: 5vh;
+  align-content: center;
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 5vh;
 }
 
 .contact .icons {
-    text-align: center;
+  text-align: center;
 }
 
 .contact a {
-    color: whitesmoke;
-    font-size: 4em;
-    transition: text-shadow 1s;
+  color: whitesmoke;
+  font-size: 4em;
+  transition: text-shadow 1s;
 }
 
 .contact i {
-    transition: transform .3s ease-in-out, text-shadow 1s;
+  transition: transform 0.3s ease-in-out, text-shadow 1s;
 }
 
 .contact i:hover,
 .contact i:active {
-    transform: scale(1.1);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 400px) {
-    .contact .grid {
-        grid-template-columns: repeat(2, 150px);
-    }
+@media (min-width: 300px) {
+  .contact .grid {
+    grid-template-columns: repeat(2, 150px);
+  }
 }
 
 @media (min-width: 880px) {
-    .contact .grid {
-        grid-template-columns: repeat(5, 200px);
-    }
+  .contact .grid {
+    grid-template-columns: repeat(5, 200px);
+  }
 }
 
 footer {
-    align-content: center;
-    background-color: black;
-    bottom: 0;
-    display: grid;
-    height: 30px;
-    justify-content: center;
-    margin-top: 10px;
-    position: fixed;
-    width: 100%;
+  align-content: center;
+  background-color: black;
+  bottom: 0;
+  display: grid;
+  height: 30px;
+  justify-content: center;
+  margin-top: 10px;
+  position: fixed;
+  width: 100%;
 }
 
 footer a {
-    color: whitesmoke;
-    font-family: "Press Start 2P", cursive;
-    font-size: 10px;
-    text-align: center;
-    text-decoration: none;
+  color: whitesmoke;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: 380px) {
-    .footer animation {
-        font-size: 8px;
-    }
+  .footer animation {
+    font-size: 8px;
+  }
 }
 
 @media (min-width: 800px) {
-    .footer a {
-        font-size: 10px;
-    }
+  .footer a {
+    font-size: 10px;
+  }
 }
