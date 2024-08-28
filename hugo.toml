@@ -21,7 +21,7 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-I am an Brazilian Software Engineer with a strong foundation in electrical engineering and a passion for solving complex problems.
+I am a Brazilian Software Engineer with a strong foundation in electrical engineering and a passion for solving complex problems.
 I am interested in a range of topics, including software architecture, databases, and algorithms.
 """
 
