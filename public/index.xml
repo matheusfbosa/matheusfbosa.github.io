@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Matheus Bosa</title>
+    <link>https://matheusfbosa.github.io/</link>
+    <description>Recent content in Home on Matheus Bosa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://matheusfbosa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, world!</title>
+      <link>https://matheusfbosa.github.io/posts/hello-world/</link>
+      <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://matheusfbosa.github.io/posts/hello-world/</guid>
+      <description>My first post summary</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://matheusfbosa.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://matheusfbosa.github.io/about/</guid>
+      <description>About I&amp;rsquo;m a Software Engineer with skills in Java, Kotlin, and Go. I have a strong understanding of the software development lifecycle, including documentation and automated testing. I embrace best practices in programming within a DevOps culture.&#xA;Feel free to get in touch with me!&#xA;Experience QuintoAndar - Senior Software Engineer (2023 - Present) Skills: Java 17, Spring Boot, Go, Terraform, AWS, Redis, Sentry, Grafana&#xA;PicPay - Senior Software Engineer (2022 - 2023) Developed new end-to-end features for the mobile application&amp;rsquo;s chat, such as user spammer control and fraud prevention.</description>
+    </item>
+  </channel>
+</rss>
